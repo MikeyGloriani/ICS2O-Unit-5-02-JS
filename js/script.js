@@ -28,9 +28,9 @@ function myButtonClicked() {
 
   if (buttonOnChecked == true) {
     document.getElementById("radio-button-value").innerHTML =
-      "<p>Value is: On</p>"
+      "<p>Your number is +</p>"
   } else {
     document.getElementById("radio-button-value").innerHTML =
-      "<p>Value is: Off</p>"
+      "<p>Your number is -</p>"
   }
 }
