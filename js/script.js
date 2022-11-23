@@ -13,20 +13,25 @@ if (navigator.serviceWorker) {
   })
 }
 
-const randomNumber = Math.floor(Math.random() * 6) + 1
+
+/**
+ * This function updates the slider value.
+ */
+ function updateSliderValue(valueFromSlider) {
+  document.getElementById("slider-value").innerHTML = valueFromSlider
+}
 
 /**
  * This function displays the slider value.
  */
 function myButtonClicked() {
-  {
-    buttonOnChecked = document.getElementById("flash2").checked
-  }
+  buttonOnChecked = document.getElementById('flash1').checked
+
   if (buttonOnChecked == true) {
     document.getElementById("radio-button-value").innerHTML =
-      "<p>Your number is -</p>" + randomNumber
+    "<p>Value is: On</p>"
   } else {
     document.getElementById("radio-button-value").innerHTML =
-      "<p>Your number is +</p>" + randomNumber
+    "<p>Value is: Off</p>"
   }
 }
