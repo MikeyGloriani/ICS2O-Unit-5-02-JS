@@ -26,13 +26,13 @@ const randomNumber = Math.floor(Math.random() * 6) + 1
  * This function displays the slider value.
  */
 function myButtonClicked() {
-  buttonOnChecked = document.getElementById("flash1").checked
+  buttonOnChecked = document.getElementById("flash2").checked
 
   if (buttonOnChecked == true) {
     document.getElementById("radio-button-value").innerHTML =
-      "<p>Your number is +</p>" + randomNumber
+      "<p>Your number is -</p>" + randomNumber
   } else {
     document.getElementById("radio-button-value").innerHTML =
-      "<p>Your number is -</p>" + randomNumber
+      "<p>Your number is +</p>" + randomNumber
   }
 }
